@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello():
   q = request.args.get('q')
   print(q)
-  return { "message": 1 }, 201
+  return { "message": "Hello!" }, 201
 
 if __name__ == "__main__":
     app.run()
